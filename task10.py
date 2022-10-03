@@ -7,3 +7,6 @@ for x in range(2):
             print(f'X = {x}, Y = {y}, Z = {z}')
             print(not(x or y or z) == (not x and not y and not z))
             print()
+
+values = False, True
+print(all(not(x or y or z) == (not x and not y and not z) for x in values for y in values for z in values))
