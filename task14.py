@@ -3,5 +3,4 @@
 # Для N = 5: 1, -3, 9, -21, 81
 
 number = int(input('Enter a number N : '))
-for i in range(number):
-    print((-3)**i, end = ', ')
+print(*((-3)**i for i in range(number)), sep = ', ')
