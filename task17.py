@@ -96,8 +96,8 @@ N = input('Введите строку: ')
 counter = 0
 target_counter = 2
 
-for i in range(len(lst)):
-    if N == lst[i]:
+for i, el in enumerate(lst):
+    if N == el:
         counter += 1
         if counter == target_counter:
              print(f'Строка {N} найдено в списке. Ее {counter} нахождение в списке под индексом {i}')
